@@ -1,0 +1,287 @@
+{
+  "OccupiedSeats": [
+    {
+      "showtimeId": "2_1_6_20250512_1130",
+      "movieId": 2,
+      "branchId": 1,
+      "hallId": 6,
+      "dateTime": "2025-05-07T11:00:00",
+      "occupiedSeats": [
+        {
+          "row": 4,
+          "column": 4,
+          "userId": 1
+        },
+        {
+          "row": 4,
+          "column": 5,
+          "userId": 2
+        },
+        {
+          "row": 4,
+          "column": 6,
+          "userId": 3
+        },
+        {
+          "row": 4,
+          "column": 7,
+          "userId": 4
+        },
+        {
+          "row": 4,
+          "column": 8,
+          "userId": 5
+        },
+        {
+          "row": 4,
+          "column": 9,
+          "userId": 6
+        },
+        {
+          "row": 4,
+          "column": 10,
+          "userId": 7
+        },
+        {
+          "row": 4,
+          "column": 11,
+          "userId": 8
+        },
+        {
+          "row": 4,
+          "column": 12,
+          "userId": 9
+        },
+        {
+          "row": 4,
+          "column": 13,
+          "userId": 10
+        },
+        {
+          "row": 4,
+          "column": 14,
+          "userId": 11
+        },
+        {
+          "row": 2,
+          "column": 5,
+          "userId": 12
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "userId": 13
+        },
+        {
+          "row": 4,
+          "column": 3,
+          "userId": 14
+        },
+        {
+          "row": 5,
+          "column": 7,
+          "userId": 15
+        },
+        {
+          "row": 6,
+          "column": 2,
+          "userId": 16
+        },
+        {
+          "row": 7,
+          "column": 8,
+          "userId": 17
+        },
+        {
+          "row": 8,
+          "column": 4,
+          "userId": 18
+        }
+      ]
+    },
+    {
+      "showtimeId": "3_3_1_20250509_1530",
+      "movieId": 1,
+      "branchId": 1,
+      "hallId": 3,
+      "dateTime": "2025-05-04T14:30:00",
+      "occupiedSeats": [
+        {
+          "row": 5,
+          "column": 6,
+          "userId": 1
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "userId": 2
+        },
+        {
+          "row": 4,
+          "column": 8,
+          "userId": 3
+        },
+        {
+          "row": 8,
+          "column": 5,
+          "userId": 4
+        },
+        {
+          "row": 8,
+          "column": 6,
+          "userId": 5
+        },
+        {
+          "row": 9,
+          "column": 18,
+          "userId": 6
+        },
+        {
+          "row": 12,
+          "column": 16,
+          "userId": 7
+        },
+        {
+          "row": 12,
+          "column": 17,
+          "userId": 8
+        },
+        {
+          "row": 12,
+          "column": 18,
+          "userId": 9
+        }
+      ]
+    },
+    {
+      "showtimeId": "1_1_3_20250504_1730",
+      "movieId": 1,
+      "branchId": 1,
+      "hallId": 3,
+      "dateTime": "2025-05-04T17:30:00",
+      "occupiedSeats": []
+    },
+    {
+      "showtimeId": "1_1_3_20250504_2030",
+      "movieId": 1,
+      "branchId": 1,
+      "hallId": 3,
+      "dateTime": "2025-05-04T20:30:00",
+      "occupiedSeats": [
+        {
+          "row": 6,
+          "column": 2,
+          "userId": 1
+        }
+      ]
+    },
+    {
+      "showtimeId": "1_2_2_20250504_1020",
+      "movieId": 1,
+      "branchId": 2,
+      "hallId": 2,
+      "dateTime": "2025-05-04T10:20:00",
+      "occupiedSeats": [
+        {
+          "row": 3,
+          "column": 3,
+          "userId": 1
+        },
+        {
+          "row": 4,
+          "column": 5,
+          "userId": 2
+        }
+      ]
+    },
+    {
+      "showtimeId": "1_2_2_20250504_1320",
+      "movieId": 1,
+      "branchId": 2,
+      "hallId": 2,
+      "dateTime": "2025-05-04T13:20:00",
+      "occupiedSeats": []
+    },
+    {
+      "showtimeId": "2_1_6_20250505_1130",
+      "movieId": 2,
+      "branchId": 1,
+      "hallId": 6,
+      "dateTime": "2025-05-05T11:30:00",
+      "occupiedSeats": [
+        {
+          "row": 7,
+          "column": 16,
+          "userId": 1
+        },
+        {
+          "row": 8,
+          "column": 4,
+          "userId": 2
+        },
+        {
+          "row": 2,
+          "column": 9,
+          "userId": 3
+        },
+        {
+          "row": 5,
+          "column": 11,
+          "userId": 4
+        }
+      ]
+    },
+    {
+      "showtimeId": "2_1_6_20250505_1430",
+      "movieId": 2,
+      "branchId": 1,
+      "hallId": 6,
+      "dateTime": "2025-05-05T14:30:00",
+      "occupiedSeats": [
+        {
+          "row": 9,
+          "column": 1,
+          "userId": 1
+        },
+        {
+          "row": 9,
+          "column": 2,
+          "userId": 2
+        }
+      ]
+    },
+    {
+      "showtimeId": "7_4_1_20250506_1015",
+      "movieId": 7,
+      "branchId": 4,
+      "hallId": 1,
+      "dateTime": "2025-05-06T10:15:00",
+      "occupiedSeats": [
+        {
+          "row": 5,
+          "column": 5,
+          "userId": 1
+        },
+        {
+          "row": 5,
+          "column": 6,
+          "userId": 2
+        },
+        {
+          "row": 6,
+          "column": 8,
+          "userId": 3
+        }
+      ]
+    },
+    {
+      "showtimeId": "7_4_1_20250506_1240",
+      "movieId": 7,
+      "branchId": 4,
+      "hallId": 1,
+      "dateTime": "2025-05-06T12:40:00",
+      "occupiedSeats": []
+    }
+  ],
+  "lastUpdated": "2025-05-04T11:00:00Z"
+}

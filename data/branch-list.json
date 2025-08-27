@@ -1,0 +1,669 @@
+{
+  "branches": [
+    {
+      "id": 1,
+      "name": "Өргөө 1",
+      "location": "Хороолол",
+      "halls": [
+        {
+          "id": 1,
+          "name": "Энгийн танхим",
+          "layout": {
+            "rows": 10,
+            "columns": 12,
+            "unavailable_seats": [
+              { "row": 10, "column": 11 },
+              { "row": 10, "column": 12 },
+              { "row": 1, "column": 6 }
+            ],
+            "seatTypes": [
+              {
+                "type": "super-saver",
+                "rows": [1, 2],
+                "label": "Супер хэмнэлттэй",
+                "price": 12000,
+                "caption": "Хамгийн хямд үнэтэй суудлууд"
+              },
+              {
+                "type": "saver",
+                "rows": [3, 4],
+                "label": "Хэмнэлттэй",
+                "price": 15000,
+                "caption": "Боломжийн үнэтэй энгийн суудлууд"
+              },
+              {
+                "type": "regular",
+                "rows": [5, 6, 7, 8],
+                "label": "Энгийн",
+                "price": 18000,
+                "caption": "Хамгийн эрэлттэй байршил дахь суудлууд"
+              },
+              {
+                "type": "vip",
+                "rows": [9, 10],
+                "label": "Премиум",
+                "price": 25000,
+                "caption": "Хамгийн гоё байршилд хамгийн тухтай суудлууд"
+              }
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "name": "Энгийн танхим",
+          "layout": {
+            "rows": 8,
+            "columns": 14,
+            "unavailable_seats": [
+              { "row": 8, "column": 13 },
+              { "row": 1, "column": 7 }
+            ],
+            "seatTypes": [
+              {
+                "type": "super-saver",
+                "rows": [1, 2],
+                "label": "Супер хэмнэлттэй",
+                "price": 12000,
+                "caption": "Хамгийн хямд үнэтэй суудлууд"
+              },
+              {
+                "type": "saver",
+                "rows": [3],
+                "label": "Хэмнэлттэй",
+                "price": 15000,
+                "caption": "Боломжийн үнэтэй энгийн суудлууд"
+              },
+              {
+                "type": "regular",
+                "rows": [4, 5, 6],
+                "label": "Энгийн",
+                "price": 18000,
+                "caption": "Хамгийн эрэлттэй байршил дахь суудлууд"
+              },
+              {
+                "type": "vip",
+                "rows": [7, 8],
+                "label": "Премиум",
+                "price": 25000,
+                "caption": "Хамгийн гоё байршилд хамгийн тухтай суудлууд"
+              }
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "name": "VIP танхим",
+          "layout": {
+            "rows": 6,
+            "columns": 8,
+            "unavailable_seats": [
+              { "row": 6, "column": 7 },
+              { "row": 1, "column": 4 }
+            ],
+            "seatTypes": [
+              {
+                "type": "super-saver",
+                "rows": [1],
+                "label": "Супер хэмнэлттэй",
+                "price": 12000,
+                "caption": "Хамгийн хямд үнэтэй суудлууд"
+              },
+              {
+                "type": "saver",
+                "rows": [2],
+                "label": "Хэмнэлттэй",
+                "price": 15000,
+                "caption": "Боломжийн үнэтэй энгийн суудлууд"
+              },
+              {
+                "type": "regular",
+                "rows": [3, 4, 5],
+                "label": "Энгийн",
+                "price": 18000,
+                "caption": "Хамгийн эрэлттэй байршил дахь суудлууд"
+              },
+              {
+                "type": "vip",
+                "rows": [6],
+                "label": "Премиум",
+                "price": 25000,
+                "caption": "Хамгийн гоё байршилд хамгийн тухтай суудлууд"
+              }
+            ]
+          }
+        },
+        {
+          "id": 4,
+          "name": "Энгийн танхим",
+          "layout": {
+            "rows": 12,
+            "columns": 10,
+            "unavailable_seats": [
+              { "row": 12, "column": 9 },
+              { "row": 1, "column": 5 }
+            ],
+            "seatTypes": [
+              {
+                "type": "super-saver",
+                "rows": [1, 2, 3, 4, 5],
+                "label": "Супер хэмнэлттэй",
+                "price": 12000,
+                "caption": "Хамгийн хямд үнэтэй суудлууд"
+              },
+              {
+                "type": "saver",
+                "rows": [6],
+                "label": "Хэмнэлттэй",
+                "price": 15000,
+                "caption": "Боломжийн үнэтэй энгийн суудлууд"
+              },
+              {
+                "type": "regular",
+                "rows": [7, 8, 9],
+                "label": "Энгийн",
+                "price": 18000,
+                "caption": "Хамгийн эрэлттэй байршил дахь суудлууд"
+              },
+              {
+                "type": "vip",
+                "rows": [10, 11, 12],
+                "label": "Премиум",
+                "price": 25000,
+                "caption": "Хамгийн гоё байршилд хамгийн тухтай суудлууд"
+              }
+            ]
+          }
+        },
+        {
+          "id": 5,
+          "name": "Энгийн танхим",
+          "layout": {
+            "rows": 8,
+            "columns": 12,
+            "unavailable_seats": [
+              { "row": 8, "column": 11 },
+              { "row": 1, "column": 6 }
+            ],
+            "seatTypes": [
+              {
+                "type": "super-saver",
+                "rows": [1, 2, 3],
+                "label": "Супер хэмнэлттэй",
+                "price": 12000,
+                "caption": "Хамгийн хямд үнэтэй суудлууд"
+              },
+              {
+                "type": "saver",
+                "rows": [4],
+                "label": "Хэмнэлттэй",
+                "price": 15000,
+                "caption": "Боломжийн үнэтэй энгийн суудлууд"
+              },
+              {
+                "type": "regular",
+                "rows": [5, 6],
+                "label": "Энгийн",
+                "price": 18000,
+                "caption": "Хамгийн эрэлттэй байршил дахь суудлууд"
+              },
+              {
+                "type": "vip",
+                "rows": [7, 8],
+                "label": "Премиум",
+                "price": 25000,
+                "caption": "Хамгийн гоё байршилд хамгийн тухтай суудлууд"
+              }
+            ]
+          }
+        },
+        {
+          "id": 6,
+          "name": "LASER танхим",
+          "layout": {
+            "rows": 14,
+            "columns": 15,
+            "unavailable_seats": [
+              { "row": 1, "column": 1 },
+              { "row": 1, "column": 2 },
+              { "row": 1, "column": 15 },
+              { "row": 2, "column": 1 },
+              { "row": 2, "column": 2 },
+              { "row": 2, "column": 15 },
+              { "row": 3, "column": 1 },
+              { "row": 3, "column": 2 },
+              { "row": 3, "column": 3 },
+              { "row": 3, "column": 4 },
+              { "row": 3, "column": 5 },
+              { "row": 3, "column": 6 },
+              { "row": 3, "column": 7 },
+              { "row": 3, "column": 8 },
+              { "row": 3, "column": 9 },
+              { "row": 3, "column": 10 },
+              { "row": 3, "column": 11 },
+              { "row": 3, "column": 12 },
+              { "row": 3, "column": 13 },
+              { "row": 3, "column": 14 },
+              { "row": 3, "column": 15 },
+              { "row": 4, "column": 1 },
+              { "row": 4, "column": 2 },
+              { "row": 4, "column": 3 },
+              { "row": 4, "column": 7 },
+              { "row": 4, "column": 8 },
+              { "row": 5, "column": 1 },
+              { "row": 5, "column": 2 },
+              { "row": 5, "column": 3 },
+              { "row": 5, "column": 7 },
+              { "row": 5, "column": 8 },
+              { "row": 6, "column": 1 },
+              { "row": 6, "column": 2 },
+              { "row": 6, "column": 3 },
+              { "row": 6, "column": 7 },
+              { "row": 6, "column": 8 },
+              { "row": 7, "column": 1 },
+              { "row": 7, "column": 2 },
+              { "row": 7, "column": 3 },
+              { "row": 7, "column": 7 },
+              { "row": 7, "column": 8 },
+              { "row": 8, "column": 1 },
+              { "row": 8, "column": 2 },
+              { "row": 8, "column": 3 },
+              { "row": 8, "column": 7 },
+              { "row": 8, "column": 8 },
+              { "row": 9, "column": 1 },
+              { "row": 9, "column": 2 },
+              { "row": 9, "column": 3 },
+              { "row": 9, "column": 7 },
+              { "row": 9, "column": 8 },
+              { "row": 10, "column": 7 },
+              { "row": 10, "column": 8 },
+              { "row": 11, "column": 7 },
+              { "row": 11, "column": 8 },
+              { "row": 12, "column": 7 },
+              { "row": 12, "column": 8 },
+              { "row": 13, "column": 7 },
+              { "row": 13, "column": 8 }
+            ],
+            "seatTypes": [
+              {
+                "type": "super-saver",
+                "rows": [1, 2],
+                "label": "Супер хэмнэлттэй",
+                "price": 12000,
+                "caption": "Хамгийн хямд үнэтэй суудлууд"
+              },
+              {
+                "type": "saver",
+                "rows": [4],
+                "label": "Хэмнэлттэй",
+                "price": 15000,
+                "caption": "Боломжийн үнэтэй энгийн суудлууд"
+              },
+              {
+                "type": "regular",
+                "rows": [5, 6, 7, 8, 9, 10, 11, 12, 13],
+                "label": "Энгийн",
+                "price": 18000,
+                "caption": "Хамгийн эрэлттэй байршил дахь суудлууд"
+              },
+              {
+                "type": "vip",
+                "rows": [14],
+                "label": "Премиум",
+                "price": 25000,
+                "caption": "Хамгийн гоё байршилд хамгийн тухтай суудлууд"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Өргөө 2",
+      "location": "IT Парк",
+      "halls": [
+        {
+          "id": 1,
+          "name": "Энгийн танхим",
+          "layout": {
+            "rows": 8,
+            "columns": 10,
+            "unavailable_seats": [
+              { "row": 8, "column": 9 },
+              { "row": 8, "column": 10 },
+              { "row": 1, "column": 6 }
+            ],
+            "seatTypes": [
+              {
+                "type": "super-saver",
+                "rows": [1, 2],
+                "label": "Супер хэмнэлттэй",
+                "price": 12000,
+                "caption": "Хамгийн хямд үнэтэй суудлууд"
+              },
+              {
+                "type": "saver",
+                "rows": [3],
+                "label": "Хэмнэлттэй",
+                "price": 15000,
+                "caption": "Боломжийн үнэтэй энгийн суудлууд"
+              },
+              {
+                "type": "regular",
+                "rows": [4, 5, 6],
+                "label": "Энгийн",
+                "price": 18000,
+                "caption": "Хамгийн эрэлттэй байршил дахь суудлууд"
+              },
+              {
+                "type": "vip",
+                "rows": [7, 8],
+                "label": "Премиум",
+                "price": 25000,
+                "caption": "Хамгийн гоё байршилд хамгийн тухтай суудлууд"
+              }
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "name": "VIP танхим",
+          "layout": {
+            "rows": 6,
+            "columns": 8,
+            "unavailable_seats": [
+              { "row": 6, "column": 7 },
+              { "row": 1, "column": 4 }
+            ],
+            "seatTypes": [
+              {
+                "type": "super-saver",
+                "rows": [1, 2],
+                "label": "Супер хэмнэлттэй",
+                "price": 12000,
+                "caption": "Хамгийн хямд үнэтэй суудлууд"
+              },
+              {
+                "type": "saver",
+                "rows": [3],
+                "label": "Хэмнэлттэй",
+                "price": 15000,
+                "caption": "Боломжийн үнэтэй энгийн суудлууд"
+              },
+              {
+                "type": "regular",
+                "rows": [4, 5, 6],
+                "label": "Энгийн",
+                "price": 18000,
+                "caption": "Хамгийн эрэлттэй байршил дахь суудлууд"
+              },
+              {
+                "type": "vip",
+                "rows": [],
+                "label": "Премиум",
+                "price": 25000,
+                "caption": "Хамгийн гоё байршилд хамгийн тухтай суудлууд"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Өргөө 3",
+      "location": "IMAX Шангри-Ла",
+      "halls": [
+        {
+          "id": 1,
+          "name": "IMAX танхим",
+          "layout": {
+            "rows": 12,
+            "columns": 32,
+            "unavailable_seats": [
+              { "row": 1, "column": 1 },
+              { "row": 9, "column": 1 },
+              { "row": 9, "column": 2 },
+              { "row": 9, "column": 3 },
+              { "row": 9, "column": 4 },
+              { "row": 9, "column": 5 },
+              { "row": 9, "column": 6 },
+              { "row": 9, "column": 7 },
+              { "row": 9, "column": 27 },
+              { "row": 9, "column": 28 },
+              { "row": 9, "column": 29 },
+              { "row": 9, "column": 30 },
+              { "row": 9, "column": 31 },
+              { "row": 9, "column": 32 },
+              { "row": 10, "column": 1 },
+              { "row": 10, "column": 2 },
+              { "row": 10, "column": 3 },
+              { "row": 10, "column": 4 },
+              { "row": 10, "column": 5 },
+              { "row": 10, "column": 6 },
+              { "row": 10, "column": 7 },
+              { "row": 10, "column": 27 },
+              { "row": 10, "column": 28 },
+              { "row": 10, "column": 29 },
+              { "row": 10, "column": 30 },
+              { "row": 10, "column": 31 },
+              { "row": 10, "column": 32 },
+              { "row": 11, "column": 1 },
+              { "row": 11, "column": 2 },
+              { "row": 11, "column": 3 },
+              { "row": 11, "column": 4 },
+              { "row": 11, "column": 5 },
+              { "row": 11, "column": 6 },
+              { "row": 11, "column": 27 },
+              { "row": 11, "column": 28 },
+              { "row": 11, "column": 29 },
+              { "row": 11, "column": 30 },
+              { "row": 11, "column": 31 },
+              { "row": 11, "column": 32 },
+              { "row": 12, "column": 1 },
+              { "row": 12, "column": 2 },
+              { "row": 12, "column": 3 },
+              { "row": 12, "column": 4 },
+              { "row": 12, "column": 5 },
+              { "row": 12, "column": 6 },
+              { "row": 12, "column": 27 },
+              { "row": 12, "column": 28 },
+              { "row": 12, "column": 29 },
+              { "row": 12, "column": 30 },
+              { "row": 12, "column": 31 },
+              { "row": 12, "column": 32 }
+            ],
+            "seatTypes": [
+              {
+                "type": "super-saver",
+                "rows": [1, 2, 3, 4],
+                "label": "Супер хэмнэлттэй",
+                "price": 12000,
+                "caption": "Хамгийн хямд үнэтэй суудлууд"
+              },
+              {
+                "type": "saver",
+                "rows": [5, 6],
+                "label": "Хэмнэлттэй",
+                "price": 15000,
+                "caption": "Боломжийн үнэтэй энгийн суудлууд"
+              },
+              {
+                "type": "regular",
+                "rows": [7, 8, 9, 10],
+                "label": "Энгийн",
+                "price": 18000,
+                "caption": "Хамгийн эрэлттэй байршил дахь суудлууд"
+              },
+              {
+                "type": "vip",
+                "rows": [11, 12],
+                "label": "Премиум",
+                "price": 25000,
+                "caption": "Хамгийн гоё байршилд хамгийн тухтай суудлууд"
+              }
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "name": "Энгийн танхим",
+          "layout": {
+            "rows": 17,
+            "columns": 26,
+            "unavailable_seats": [
+              { "row": 4, "column": 1 },
+              { "row": 4, "column": 2 },
+              { "row": 4, "column": 3 },
+              { "row": 4, "column": 4 },
+              { "row": 4, "column": 5 },
+              { "row": 4, "column": 6 },
+              { "row": 4, "column": 7 },
+              { "row": 4, "column": 8 },
+              { "row": 4, "column": 9 },
+              { "row": 4, "column": 10 },
+              { "row": 4, "column": 11 },
+              { "row": 4, "column": 12 },
+              { "row": 4, "column": 13 },
+              { "row": 4, "column": 14 },
+              { "row": 4, "column": 15 },
+              { "row": 4, "column": 16 },
+              { "row": 4, "column": 17 },
+              { "row": 4, "column": 18 },
+              { "row": 4, "column": 19 },
+              { "row": 4, "column": 20 },
+              { "row": 4, "column": 21 },
+              { "row": 4, "column": 22 },
+              { "row": 4, "column": 23 },
+              { "row": 4, "column": 24 },
+              { "row": 4, "column": 25 },
+              { "row": 4, "column": 26 }
+            ],
+            "seatTypes": [
+              {
+                "type": "super-saver",
+                "rows": [1, 2, 3, 4, 5, 6, 7],
+                "label": "Супер хэмнэлттэй",
+                "price": 12000,
+                "caption": "Хамгийн хямд үнэтэй суудлууд"
+              },
+              {
+                "type": "saver",
+                "rows": [8, 9],
+                "label": "Хэмнэлттэй",
+                "price": 15000,
+                "caption": "Боломжийн үнэтэй энгийн суудлууд"
+              },
+              {
+                "type": "regular",
+                "rows": [10, 11, 12, 13],
+                "label": "Энгийн",
+                "price": 18000,
+                "caption": "Хамгийн эрэлттэй байршил дахь суудлууд"
+              },
+              {
+                "type": "vip",
+                "rows": [14, 15, 16, 17],
+                "label": "ВИП",
+                "price": 25000,
+                "caption": "Хамгийн гоё байршилд хамгийн тухтай суудлууд"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Өргөө 4",
+      "location": "Дархан хот",
+      "halls": [
+        {
+          "id": 1,
+          "name": "Энгийн танхим",
+          "layout": {
+            "rows": 10,
+            "columns": 14,
+            "unavailable_seats": [
+              { "row": 10, "column": 13 },
+              { "row": 10, "column": 14 },
+              { "row": 1, "column": 7 }
+            ],
+            "seatTypes": [
+              {
+                "type": "super-saver",
+                "rows": [1, 2],
+                "label": "Супер хэмнэлттэй",
+                "price": 12000,
+                "caption": "Хамгийн хямд үнэтэй суудлууд"
+              },
+              {
+                "type": "saver",
+                "rows": [3],
+                "label": "Хэмнэлттэй",
+                "price": 15000,
+                "caption": "Боломжийн үнэтэй энгийн суудлууд"
+              },
+              {
+                "type": "regular",
+                "rows": [4, 5, 6, 7, 8],
+                "label": "Энгийн",
+                "price": 18000,
+                "caption": "Хамгийн эрэлттэй байршил дахь суудлууд"
+              },
+              {
+                "type": "vip",
+                "rows": [9, 10],
+                "label": "Премиум",
+                "price": 25000,
+                "caption": "Хамгийн гоё байршилд хамгийн тухтай суудлууд"
+              }
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "name": "Энгийн танхим",
+          "layout": {
+            "rows": 6,
+            "columns": 8,
+            "unavailable_seats": [
+              { "row": 6, "column": 7 },
+              { "row": 1, "column": 4 }
+            ],
+            "seatTypes": [
+              {
+                "type": "super-saver",
+                "rows": [1],
+                "label": "Супер хэмнэлттэй",
+                "price": 12000,
+                "caption": "Хамгийн хямд үнэтэй суудлууд"
+              },
+              {
+                "type": "saver",
+                "rows": [2],
+                "label": "Хэмнэлттэй",
+                "price": 15000,
+                "caption": "Боломжийн үнэтэй энгийн суудлууд"
+              },
+              {
+                "type": "regular",
+                "rows": [3, 4, 5],
+                "label": "Энгийн",
+                "price": 18000,
+                "caption": "Хамгийн эрэлттэй байршил дахь суудлууд"
+              },
+              {
+                "type": "vip",
+                "rows": [6],
+                "label": "Премиум",
+                "price": 25000,
+                "caption": "Хамгийн гоё байршилд хамгийн тухтай суудлууд"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
