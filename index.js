@@ -7,11 +7,13 @@ import branchesRoutes from './routes/branchesRoutes.js';
 import moviesRoutes from './routes/moviesRoutes.js';
 import bookingsRoutes from './routes/bookingsRoutes.js';
 import authRoutes from './routes/authRoutes.js';
+import showtimesRoutes from './routes/showtimesRoutes.js';
 
 app.use(json());
 
 app.use('/api/branches', branchesRoutes);
 app.use('/api/movies', moviesRoutes);
+app.use('/api/showtimes', showtimesRoutes);
 app.use('/api/bookings', bookingsRoutes);
 app.use('/api/auth', authRoutes);
 
