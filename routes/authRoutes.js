@@ -1,13 +1,10 @@
-import express from 'express';
-// Note: You'll need to create a controller for authentication
-// import * as authController from '../controllers/authController.js';
+import { Router } from 'express';
+import { login, register } from '../controllers/authController.js';
 
-const router = express.Router();
 
-// Example route for user registration
-// router.post('/register', authController.register);
+const router = Router();
 
-// Example route for user login
-// router.post('/login', authController.login);
+router.post('/register', register);
+router.post('/login', login);
 
 export default router;
