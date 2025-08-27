@@ -197,3 +197,26 @@ TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.users
     OWNER to postgres;
+
+
+-- Table: public.movie_notifications
+-- Stores which upcoming movies a user is interested in.
+CREATE TABLE IF NOT EXISTS public.movie_notifications
+(
+    user_id integer NOT NULL,
+    movie_id integer NOT NULL,
+    CONSTRAINT movie_notifications_pkey PRIMARY KEY (user_id, movie_id),
+    CONSTRAINT movie_notifications_user_id_fkey FOREIGN KEY (user_id)
+        REFERENCES public.users (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT movie_notifications_movie_id_fkey FOREIGN KEY (movie_id)
+        REFERENCES public.upcoming_movies (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.movie_notifications
+    OWNER to postgres;
