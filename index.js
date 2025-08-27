@@ -8,6 +8,8 @@ import moviesRoutes from './routes/moviesRoutes.js';
 import bookingsRoutes from './routes/bookingsRoutes.js';
 import authRoutes from './routes/authRoutes.js';
 import showtimesRoutes from './routes/showtimesRoutes.js';
+import userRoutes from './routes/userRoutes.js';
+import upcomingRoutes from './routes/upcomingRoutes.js';
 
 app.use(json());
 
@@ -16,6 +18,8 @@ app.use('/api/movies', moviesRoutes);
 app.use('/api/showtimes', showtimesRoutes);
 app.use('/api/bookings', bookingsRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/upcoming', upcomingRoutes);
 
 app.get('/', (req, res) => {
     res.send('Welcome to the Movie Booking API');

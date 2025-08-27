@@ -6,7 +6,7 @@ export const getShowTimes = async (req, res) => {
         const result = await query('SELECT * FROM showtimes');
         res.json(result.rows);
     } catch (err) {
-        console.error('Error fetching movies:', err.message);
+        console.error('Error fetching showtimes:', err.message);
         res.status(500).send('Server Error');
     }
 };
