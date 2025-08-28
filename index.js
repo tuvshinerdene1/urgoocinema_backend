@@ -10,7 +10,7 @@ import showtimesRoutes from './routes/showtimesRoutes.js';
 import userRoutes from './routes/userRoutes.js';
 import upcomingRoutes from './routes/upcomingRoutes.js';
 
-
+app.use(cors());
 app.use(json());
 
 app.use('/api/branches', branchesRoutes);
