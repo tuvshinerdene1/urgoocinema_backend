@@ -22,3 +22,13 @@ export const getShowtimesById = async (req, res) => {
         res.status(500).send('Server Error');
     }
 };
+export const getShowtimesByMovieId = async (req, res) => {
+    const { movieId } = req.params;
+    try {
+        const result = await query('SELECT * FROM showtimes WHERE movie_id = $1', [movieId]);
+        res.json(result.rows);
+    } catch (err) {
+        console.error('Error fetching showtimes:', err.message);
+        res.status(500).send('Server Error');
+    }
+};

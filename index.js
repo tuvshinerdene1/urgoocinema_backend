@@ -9,6 +9,7 @@ import authRoutes from './routes/authRoutes.js';
 import showtimesRoutes from './routes/showtimesRoutes.js';
 import userRoutes from './routes/userRoutes.js';
 import upcomingRoutes from './routes/upcomingRoutes.js';
+import cors from 'cors';
 
 app.use(cors());
 app.use(json());
