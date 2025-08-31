@@ -52,3 +52,17 @@ export const createBooking = async (req, res) => {
         res.status(500).json({ error: 'Internal Server Error', details: err.message });
     }
 };
+
+export const getBookingsofUser = async (req, res) => {
+    const { userId } = req.params;
+    try {
+        const result = await query(
+            'SELECT * FROM booked_seats WHERE user_id = $1',
+            [userId]
+        );
+        res.json(result.rows);
+    } catch (err) {
+        console.error('Error fetching occupied seats:', err.message);
+        res.status(500).send('Server Error');
+    }
+}
