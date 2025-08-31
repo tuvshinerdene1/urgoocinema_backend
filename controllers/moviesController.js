@@ -9,3 +9,14 @@ export const getMovies = async (req, res) => {
         res.status(500).send('Server Error');
     }
 };
+
+export const getMovieById = async (req, res) => {
+    const { movieId } = req.params;
+    try {
+        const result = await query('SELECT * FROM movies WHERE id = $1', [movieId]);
+        res.json(result.rows);
+    } catch (err) {
+        console.error('Error fetching movies:', err.message);
+        res.status(500).send('Server Error');
+    }
+}
