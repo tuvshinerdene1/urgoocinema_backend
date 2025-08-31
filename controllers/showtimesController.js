@@ -11,7 +11,6 @@ export const getShowTimes = async (req, res) => {
     }
 };
 
-// Get all showtimes for a given movie ID
 export const getShowtimesById = async (req, res) => {
     const { id } = req.params;
     try {

@@ -1,7 +1,5 @@
 import { query } from '../config/db.js';
 
-// Get all users
-
 export const getUsers = async (req, res) => {
     try {
         const result = await query('SELECT * FROM users');
@@ -12,7 +10,6 @@ export const getUsers = async (req, res) => {
     }
 };
 
-// Get the user for a given user ID
 export const getUserById = async (req, res) => {
     const { id } = req.params;
     try {

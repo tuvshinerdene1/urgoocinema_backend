@@ -5,7 +5,6 @@ const resetData = async () => {
         await query('BEGIN');
         console.log('Starting data reset...');
 
-        // Truncate tables in an order that respects foreign key constraints
         console.log('Truncating booked_seats...');
         await query('TRUNCATE booked_seats RESTART IDENTITY CASCADE;');
 

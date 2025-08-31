@@ -54,7 +54,6 @@ const seedShowtimes = async () => {
         const startDate = new Date(movie.start_date);
         const endDate = new Date(movie.end_date);
 
-        // Ensure startDate and endDate are valid
         if (isNaN(startDate) || isNaN(endDate)) {
             console.warn(`Invalid start_date or end_date for movie ${movie.title}. Skipping showtimes.`);
             continue;
@@ -65,7 +64,6 @@ const seedShowtimes = async () => {
             const hallId = showtimeData.hallId;
             const branchNum = parseInt(branchId.replace('branch', ''));
 
-            // Iterate through each week from start_date to end_date
             let currentWeekStart = new Date(startDate);
 
             while (currentWeekStart <= endDate) {
@@ -76,7 +74,6 @@ const seedShowtimes = async () => {
                     const targetDate = new Date(currentWeekStart);
                     targetDate.setDate(currentWeekStart.getDate() + dayDifference);
 
-                    // Skip if targetDate is outside the movie's valid date range
                     if (targetDate < startDate || targetDate > endDate) {
                         continue;
                     }
@@ -85,7 +82,6 @@ const seedShowtimes = async () => {
                         const [hour, minute] = time.split(':').map(Number);
                         targetDate.setHours(hour, minute, 0, 0);
 
-                        // Generate showtime ID consistent with occupiedSeatsData
                         const dateStr = `${targetDate.getFullYear()}${String(targetDate.getMonth() + 1).padStart(2, '0')}${String(targetDate.getDate()).padStart(2, '0')}`;
                         const timeStr = time.replace(':', '');
                         const showtimeId = `${branchNum}_${hallId}_${movie.id}_${dateStr}_${timeStr}`;
@@ -96,7 +92,6 @@ const seedShowtimes = async () => {
                         );
                     }
                 }
-                // Move to the next week
                 currentWeekStart.setDate(currentWeekStart.getDate() + 7);
             }
         }
@@ -106,11 +101,8 @@ const seedShowtimes = async () => {
 const seedBookedSeats = async () => {
     console.log('Seeding booked seats...');
     for (const booking of occupiedSeatsData.OccupiedSeats) {
-        // Parse booking.showtimeId back into parts
-        // Format in JSON is something like: branchNum_hallId_movieId_YYYYMMDD_HHMM
         const [branchNum, hallId, movieId, datePart, timePart] = booking.showtimeId.split('_');
 
-        // Convert date + time into ISO datetime
         const year = datePart.slice(0, 4);
         const month = datePart.slice(4, 6);
         const day = datePart.slice(6, 8);
@@ -119,7 +111,6 @@ const seedBookedSeats = async () => {
 
         const startDatetime = new Date(`${year}-${month}-${day}T${hour}:${minute}:00.000Z`);
 
-        // Lookup actual UUID from DB
         const res = await query(
             'SELECT id FROM showtimes WHERE movie_id=$1 AND branch_id=$2 AND hall_id=$3 AND start_datetime=$4',
             [movieId, branchNum, hallId, startDatetime.toISOString()]
@@ -133,7 +124,6 @@ const seedBookedSeats = async () => {
 
         const correctShowtimeId = res.rows[0].id;
 
-        // Insert booked seats
         for (const seat of booking.occupiedSeats) {
             await query(
                 'INSERT INTO booked_seats (showtime_id, seat_row, seat_column, user_id) VALUES ($1, $2, $3, $4) ON CONFLICT DO NOTHING',

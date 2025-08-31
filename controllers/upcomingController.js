@@ -1,6 +1,5 @@
 import { query } from '../config/db.js';
 
-// Get all users
 
 export const getUpcoming = async (req, res) => {
     try {
@@ -12,7 +11,6 @@ export const getUpcoming = async (req, res) => {
     }
 };
 
-// Get the user for a given user ID
 export const getUpcomingById = async (req, res) => {
     const { id } = req.params;
     try {

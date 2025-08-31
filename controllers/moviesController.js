@@ -1,6 +1,5 @@
 import { query } from '../config/db.js';
 
-// Get all movies that are currently playing
 export const getMovies = async (req, res) => {
     try {
         const result = await query('SELECT * FROM movies WHERE start_date <= NOW() AND end_date >= NOW()');
