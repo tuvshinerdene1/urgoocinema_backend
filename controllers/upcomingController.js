@@ -25,7 +25,7 @@ export const getUpcomingById = async (req, res) => {
 export const getUpcomingByUserId = async (req, res) => {
     const { userId } = req.params;
     try {
-        const result = await query('select * from upcoming_movies where id = (select movie_id from movie_notifications where user_id = $1)', [userId]);
+        const result = await query('select * from upcoming_movies where id = $1', [userId]);
         res.json(result.rows);
         res.status(500).send('Server Error');
     } catch (err) {
@@ -37,7 +37,7 @@ export const getUpcomingByUserId = async (req, res) => {
 
 
 export const postNotifications = async (req, res) => {
-    const { user_id, movie_id } = req.params;
+    const { user_id, movie_id } = req.body;
 
     try {
         await query('BEGIN');
@@ -61,7 +61,7 @@ export const getNotifications = async (req, res) => {
     const { userId } = req.params;
 
     try {
-        const result = await query('select * from movie_notifications where user_id = $1)', [userId]);
+        const result = await query('select * from movie_notifications where user_id = $1', [userId]);
         res.json(result.rows);
         res.status(500).send('Server Error');
     } catch (err) {
