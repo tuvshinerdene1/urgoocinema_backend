@@ -37,7 +37,7 @@ export const getUpcomingByUserId = async (req, res) => {
 
 
 export const postNotifications = async (req, res) => {
-    const { user_id, movie_id } = req.body;
+    const { user_id, movie_id } = req.params;
 
     try {
         await query('BEGIN');
@@ -56,3 +56,18 @@ export const postNotifications = async (req, res) => {
         res.status(500).json({ error: 'Internal Server Error', details: err.message });
     }
 };
+
+export const getNotifications = async (req, res) => {
+    const { userId } = req.params;
+
+    try {
+        const result = await query('select * from movie_notifications where user_id = $1)', [userId]);
+        res.json(result.rows);
+        res.status(500).send('Server Error');
+    } catch (err) {
+        await query('ROLLBACK');
+        console.error('Error getting notifications:', err.message);
+        res.status(500).json({ error: 'Internal Server Error', details: err.message });
+    }
+
+}
