@@ -18,6 +18,7 @@ export const getOccupiedSeats = async (req, res) => {
 
 export const createBooking = async (req, res) => {
     const { showtime_id, user_id, seats, booking_time } = req.body;
+    console.log(req.body);
 
     try {
         await query('BEGIN');
