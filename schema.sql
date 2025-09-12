@@ -4,7 +4,7 @@
 
 CREATE TABLE IF NOT EXISTS public.booked_seats
 (
-    id integer NOT NULL,
+    id serial NOT NULL,
     showtime_id character varying COLLATE pg_catalog."default",
     seat_row integer NOT NULL,
     seat_column integer NOT NULL,
